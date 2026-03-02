@@ -1,13 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>TSWRDCW Nirmal</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- if you have CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Section */
+        .top-header {
+            background-color: #800000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            flex-wrap: wrap;
+        }
+
+        .top-header img {
+            height: 80px;
+        }
+
+        .college-title {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .college-title h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .college-title p {
+            margin: 3px 0;
+            font-size: 13px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b22222;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 22px;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffcc00;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('college.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 160px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .top-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .top-header img {
+                margin: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                border-top: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+        }
+
+         .scrolling-text {
+    background-color: #ffcc00;
+    color: #800000;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scrolling-text p {
+    display: inline-block;
+    padding: 10px 0;
+    animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to TSWRDCW Nirmal College</h1>
-    <p>This is the home page of our college website.</p>
-    <a href="about.html">About Us</a> <!-- if you have about.html -->
+
+<!-- Header with Logos -->
+<div class="top-header">
+    <img src="Telangana_logo.jpg" alt="Telangana State Logo">&nbsp;
+     <img src="one.jpg" alt="Telangana No.1 Logo" class="logo">
+    <div class="college-title">
+        <h1>Telangana Social Welfare Residential Degree College for Women, NIRMAL</h1>
+        <p>Affiliated to: Kakatiya University</p>
+        <p>Academic Year: 2025–2026 | Established: 2016</p>
+    </div>
+
+    <img src="TSWREIS_logo.jpg" alt="TSWRDCW Nirmal Logo">
+</div>
+
+<!-- Navigation -->
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="CGC.html">CGC</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<div class="scrolling-text">
+    <p>🎓 Welcome to TGSWRDCW Nirmal – Empowering Women Through Education 🎓</p>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h2>Empowering Women Through Quality Higher Education</h2>
+    <p>Academic Excellence | Discipline | Leadership | Skill Development</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 TSWRDCW Nirmal</p>
+    <p>Affiliated to Kakatiya University | Telangana State</p>
+    <p>All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
