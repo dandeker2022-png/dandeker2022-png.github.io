@@ -141,6 +141,59 @@
         transform: translateX(-100%);
     }
 }
+
+.notice-board {
+    width: 300px;
+    height: 200px;
+    border: 3px solid maroon;
+    background-color: #fff8dc;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.notice-board h2 {
+    background-color: maroon;
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.notice-board p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.principal-message{
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.principal-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.principal-photo{
+    text-align: center;
+}
+
+.principal-photo img{
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid maroon;
+}
+
+.principal-text h2{
+    color: maroon;
+}
+
+.principal-text p{
+    text-align: justify;
+    line-height: 1.6;
+}
     </style>
 </head>
 
@@ -179,7 +232,52 @@
     <h2>Empowering Women Through Quality Higher Education</h2>
     <p>Academic Excellence | Discipline | Leadership | Skill Development</p>
 </div>
+<section class="principal-message">
 
+    <div class="principal-container">
+
+        <div class="principal-photo">
+            <img src="principal.jpeg" alt="Principal Photo">
+            <h3>Dr. D. Kavitha</h3>
+            <p>Principal</p>
+        </div>
+
+        <div class="principal-text">
+            <h2>Principal's Message</h2>
+
+            <p>
+            Welcome to our college. Our institution is committed to providing 
+            quality education, strong values, and holistic development for every student. 
+            We strive to create a peaceful and inspiring learning environment surrounded 
+            by nature, where students can grow academically and personally.
+            </p>
+
+            <p>
+            With the dedication of our faculty and the enthusiasm of our students, 
+            we continuously aim for excellence in academics, cultural activities, 
+            and sports. We encourage our students to develop leadership qualities, 
+            discipline, and a sense of social responsibility.
+            </p>
+
+            <p>
+            I warmly invite you to explore our college and become part of our 
+            journey towards knowledge, innovation, and success.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="notice-board">
+    <h2>📢 Notice Board</h2>
+    <marquee direction="up" scrollamount="2">
+        <p>📌 Semester Exams start from April 17</p>
+        <p>📌 NSS Meeting on March 15 at Seminar Hall</p>
+        <p>📌 Confluence 2K26 from 9th March to 11th March</p>
+        
+    </marquee>
+</section>
 <!-- Footer -->
 <footer>
     <p>&copy; 2026 TSWRDCW Nirmal</p>
